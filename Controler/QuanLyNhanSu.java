@@ -21,9 +21,9 @@ public class QuanLyNhanSu extends JFrame {
     private JTable dataTable1;
     private JTable dataTable2;
     private DefaultTableModel dataTableModel;
-    private  String url = "jdbc:mysql://localhost:3306/nhansu";
-    private  String user = "root";
-    private  String password = "123456789";
+    private  String url = "jdbc:mysql://localhost:3306/......";
+    private  String user = "........";
+    private  String password = "........";
     
 
     public QuanLyNhanSu() {
@@ -70,10 +70,10 @@ public class QuanLyNhanSu extends JFrame {
         JScrollPane scrollPane = new JScrollPane(dataTable);
        
 
-        // Adding the table and scroll bars to the panel
+       
         panel.add(scrollPane, BorderLayout.CENTER);
 
-        // Adding search components
+        
         JPanel searchPanel = new JPanel(new GridLayout(1, 0));
         JLabel search = new JLabel("Tìm kiếm");
         JTextField searchs = new JTextField();
@@ -83,7 +83,7 @@ public class QuanLyNhanSu extends JFrame {
         searchPanel.add(searchss);
         panel.add(searchPanel, BorderLayout.NORTH);
 
-        // Adding buttons and input fields
+        
         JPanel buttonAndInputPanel = new JPanel(new BorderLayout());
 
         
@@ -124,7 +124,7 @@ public class QuanLyNhanSu extends JFrame {
         panel.add(buttonAndInputPanel, BorderLayout.SOUTH);
         
 
-        // Thêm lắng nghe cho nút "Thêm"
+        
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -378,7 +378,7 @@ public class QuanLyNhanSu extends JFrame {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Xử lý ngoại lệ hoặc thông báo lỗi theo yêu cầu của bạn
+           
         }
     }
 
@@ -400,10 +400,10 @@ public class QuanLyNhanSu extends JFrame {
          JScrollPane scrollPane = new JScrollPane(dataTable1);
         
 
-         // Adding the table and scroll bars to the panel
+         
          panel1.add(scrollPane, BorderLayout.CENTER);
 
-         // Adding search components
+         /
          JPanel searchPanel1 = new JPanel(new GridLayout(1, 0));
          JLabel search1 = new JLabel("Tìm kiếm");
          JTextField searchs1 = new JTextField();
@@ -413,7 +413,7 @@ public class QuanLyNhanSu extends JFrame {
          searchPanel1.add(searchss1);
          panel1.add(searchPanel1, BorderLayout.NORTH);
 
-         // Adding buttons and input fields
+         
          JPanel buttonAndInputPanel1 = new JPanel(new BorderLayout());
          
          JPanel inputPanel1 = new JPanel();
@@ -448,7 +448,7 @@ public class QuanLyNhanSu extends JFrame {
 
          panel1.add(buttonAndInputPanel1, BorderLayout.SOUTH);
 
-         // Thêm lắng nghe cho nút "Thêm"
+         
          addButton1.addActionListener(new ActionListener() {
              @Override
              public void actionPerformed(ActionEvent e) {
@@ -612,7 +612,7 @@ public class QuanLyNhanSu extends JFrame {
             	        }
             	    } catch (SQLException ex) {
             	        ex.printStackTrace();
-            	        // Xử lý lỗi kết nối hoặc thực hiện truy vấn
+            	       
             	    }
             	}
 
@@ -691,10 +691,10 @@ public class QuanLyNhanSu extends JFrame {
         JScrollPane scrollPane2 = new JScrollPane(dataTable2);
        
 
-        // Adding the table and scroll bars to the panel
+       
         panel2.add(scrollPane2, BorderLayout.CENTER);
 
-        // Adding search components
+        
         JPanel searchPanel2 = new JPanel(new GridLayout(1, 0));
         JLabel search2 = new JLabel("Tìm kiếm");
         JTextField searchs2 = new JTextField();
@@ -704,7 +704,7 @@ public class QuanLyNhanSu extends JFrame {
         searchPanel2.add(searchss2);
         panel2.add(searchPanel2, BorderLayout.NORTH);
 
-        // Adding buttons and input fields
+        
         JPanel buttonAndInputPanel2 = new JPanel(new BorderLayout());
         
         JPanel inputPanel2 = new JPanel();
@@ -736,7 +736,7 @@ public class QuanLyNhanSu extends JFrame {
 
         panel2.add(buttonAndInputPanel2, BorderLayout.SOUTH);
 
-        // Thêm lắng nghe cho nút "Thêm"
+       
         addButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
